@@ -3,60 +3,185 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bubble Agency – No-Code Web App Experts</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold" href="#">Bubble Agency</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#hero">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#features">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
 
-    <div class="container my-5">
-      <h1>Hello, world!</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-5">You've successfully loaded up the Bootstrap starter example. It includes <a href="https://getbootstrap.com/">Bootstrap 5</a> via the <a href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr CDN</a> and includes an additional CSS and JS file for your own code.</p>
-        <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-        <hr class="col-1 my-4">
-
-        <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-        <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
+    <!-- Hero Section -->
+    <section id="hero" class="py-5 bg-light text-center">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-7">
+            <h1 class="display-4 fw-bold mb-3">Launch Your App Fast With Bubble Experts</h1>
+            <p class="lead mb-4">We are a team of certified Bubble developers helping founders and teams build powerful, scalable no-code web applications. From MVP to growth, we turn your ideas into digital reality—no code required.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
+            <a href="#features" class="btn btn-outline-secondary btn-lg ms-2">View Services</a>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
+              class="img-fluid rounded shadow" alt="Team working on digital interface" width="450" height="300" loading="lazy">
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Features/Services Section -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="fw-bold">What We Offer</h2>
+            <p class="text-muted">Comprehensive Bubble app development for startups and growing companies</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card border-0 h-100 shadow-sm">
+              <div class="card-body">
+                <div class="mb-3 text-primary"><svg width="40" height="40" fill="currentColor" class="bi bi-lightning" viewBox="0 0 16 16" aria-hidden="true"><path d="M11.3 1L3.612 8.236a.5.5 0 0 0 .344.847H7.5L6 15l7.688-7.236a.5.5 0 0 0-.344-.847H8.5L10 1z"/></svg></div>
+                <h5 class="card-title fw-semibold">Rapid MVP Development</h5>
+                <p class="card-text fs-6">Validate your idea quickly with a fully functional MVP delivered in just weeks. We accelerate the build so you can focus on growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 h-100 shadow-sm">
+              <div class="card-body">
+                <div class="mb-3 text-primary"><svg width="40" height="40" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16" aria-hidden="true"><path d="M9.243 1.454A.5.5 0 0 0 8.757 1.454l-.442 1.036a5.95 5.95 0 0 0-1.887.342L5.074 1.684a.5.5 0 1 0-.633.773l.964.836A5.978 5.978 0 0 0 4 5.5c0 .342.03.678.09 1.006l-.964.836a.5.5 0 1 0 .633.773l1.354-1.148c.453.198.932.298 1.434.298.502 0 .981-.1 1.434-.298l1.354 1.148a.5.5 0 0 0 .633-.773l-.964-.836c.06-.328.09-.664.09-1.006a5.978 5.978 0 0 0-1.398-4.207l.964-.836a.5.5 0 0 0-.633-.773l-1.028.846zm-.049 6.47a2.5 2.5 0 1 1-2.388-4.18A2.5 2.5 0 0 1 9.193 7.924z"/></svg></div>
+                <h5 class="card-title fw-semibold">Custom App Solutions</h5>
+                <p class="card-text fs-6">From workflows to integrations, we design and build custom web apps tailored to your business and users—no templates, just bespoke solutions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0 h-100 shadow-sm">
+              <div class="card-body">
+                <div class="mb-3 text-primary"><svg width="40" height="40" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16" aria-hidden="true"><path d="M13 7a2 2 0 1 0-4 0 2 2 0 0 0 4 0zM5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 5c0-1-1-3-5-3s-5 2-5 3v1h10v-1zM5.216 12a3.214 3.214 0 0 1-2.203-1.045A7.468 7.468 0 0 1 8 9.5c2.076 0 3.984.809 5.987 2.455A3.214 3.214 0 0 1 10.784 12H5.216z"/></svg></div>
+                <h5 class="card-title fw-semibold">End-to-End Support</h5>
+                <p class="card-text fs-6">From idea to launch and beyond, our team supports you at every stage—strategy, testing, launch, updates, and ongoing maintenance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <div class="row mb-4 text-center">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="fw-bold">What Clients Say</h2>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="card-text fst-italic mb-2">“Bubble Agency took our idea and launched our MVP in less than a month. Responsive, fast, and committed!”</p>
+                <hr>
+                <div class="d-flex align-items-center">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" width="48" height="48" alt="Client testimonial photo" class="rounded-circle me-3" loading="lazy">
+                  <div>
+                    <strong>James Kelly</strong><br>
+                    <span class="text-muted small">Founder, SaaSly</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="card-text fst-italic mb-2">“A brilliant partner for our startup. The team handled everything—from workflows to API integrations!”</p>
+                <hr>
+                <div class="d-flex align-items-center">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" width="48" height="48" alt="Client testimonial photo" class="rounded-circle me-3" loading="lazy">
+                  <div>
+                    <strong>Laura Nunez</strong><br>
+                    <span class="text-muted small">COO, Onboardly</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <p class="card-text fst-italic mb-2">“Professional, knowledgeable, and super communicative. Our app scaled quickly with their ongoing support.”</p>
+                <hr>
+                <div class="d-flex align-items-center">
+                  <img src="https://randomuser.me/api/portraits/men/76.jpg" width="48" height="48" alt="Client testimonial photo" class="rounded-circle me-3" loading="lazy">
+                  <div>
+                    <strong>Raj Patel</strong><br>
+                    <span class="text-muted small">Tech Lead, Hiveup</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Lead Capture Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card shadow-sm border-0">
+              <div class="card-body p-4">
+                <h3 class="fw-bold mb-3">Contact Us</h3>
+                <form autocomplete="off" aria-label="Contact form">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required autocomplete="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@email.com" required autocomplete="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">How can we help?</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Tell us about your idea..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg w-100">Get in Touch</button>
+                </form>
+              </div>
+            </div>
+            <p class="text-center text-muted small mt-3" aria-hidden="true">© 2026 Bubble Agency. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="main.js"></script>
